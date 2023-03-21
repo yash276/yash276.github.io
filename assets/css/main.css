@@ -1,6 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
-
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Modak&display=swap');
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -1927,15 +1927,46 @@ input, select, textarea {
 	}
 
 /* Logo */
-
-	#logo {
-		display: inline-block;
+	.logo {
+		color: #374b73;
+		font-family: 'Modak', cursive;
+		font-size: 50px;
+		position: relative;
+		left: 70px;
+		letter-spacing: 6px;
+		z-index: 0;
 	}
-	#logo h1 {
-		text-align: center;
-		margin-top: 0%;  
+ 
+	.logo::after {
+		content: "अEC";
+		font-family: 'Modak', cursive;
+		color: #ff9a9a;
+		font-size: 50px;
+		position: absolute;
+		letter-spacing: 6px;
+		top: 2px;
+		left: 2px;
+		z-index: -1;
 	}
-
+/* Company Name */
+	.companyname{
+		font-family: 'Kalam', cursive;
+		font-weight: 700;
+		color: #374b73;
+		font-size: 22px;
+		letter-spacing: 2.5px;
+	}
+/* Tag Line */
+	.tagline{
+		font-family: 'Kalam', cursive;
+		font-weight: 400;
+		color: #374b73;
+		font-size: 10px;
+		letter-spacing: 2px;
+		position: relative;
+		top: -20px;
+		left: 45px;
+	}
 
 /* Nav */
 
