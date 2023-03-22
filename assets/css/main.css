@@ -1,6 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Modak&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -1974,7 +1974,7 @@ input, select, textarea {
 		position: absolute;
 		right: 0;
 		top: 0;
-		font-size: 0.9em;
+		font-size: 1.5em;
 	}
 
 		#nav ul {
@@ -1993,9 +1993,10 @@ input, select, textarea {
 					-webkit-transition: background-color .25s ease-in-out;
 					-ms-transition: background-color .25s ease-in-out;
 					transition: background-color .25s ease-in-out;
-					font-weight: 800;
+					font-family: 'Kalam', cursive;
+					font-weight: 700;
 					letter-spacing: 0.025em;
-					color: #696969;
+					color: #374B73;
 					text-decoration: none;
 					border-radius: 6px;
 					padding: 0.5em 1em 0.5em 1em;
@@ -2004,19 +2005,19 @@ input, select, textarea {
 				#nav ul li > ul {
 					display: none;
 				}
-
+				/*
 				#nav ul li:hover a, #nav ul li:hover span {
-					background: #fff;
-				}
-
+					background: #FF9A9A;
+				}*/
+				/*	
 				#nav ul li.active a, #nav ul li.active span {
 					background: #fff;
-				}
+				}*/
 
-				#nav ul li.current a {
+				/*#nav ul li.current a {
 					background: #444;
 					color: #fff;
-				}
+				}*/
 
 	.dropotron {
 		background: #fff;
@@ -2412,8 +2413,8 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #fff;
-				box-shadow: inset -3px 0px 0px 0px #dfdfdf;
+				background: #fff1ed;
+				box-shadow: inset -3px 0px 0px 0px #fff1ed;
 				padding: 0 23px 0 20px;
 			}
 
@@ -2422,8 +2423,8 @@ input, select, textarea {
 					text-decoration: none;
 					height: 54px;
 					line-height: 54px;
-					border-top: solid 1px #e8e8e8;
-					color: #696969;
+					border-top: solid 1px #374B73;
+					/* color: yellow; */
 				}
 
 					#navPanel .link:first-child {
@@ -2456,8 +2457,10 @@ input, select, textarea {
 				}
 
 				#navPanel .depth-0 {
-					color: #444;
-					font-weight: 800;
+					color: #374B73;
+					font-family: 'Kalam', cursive;
+					font-weight: 700;
+					font-size: 1.25em;
 				}
 
 			body.navPanel-visible #page-wrapper {
