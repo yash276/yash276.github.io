@@ -1927,27 +1927,33 @@ input, select, textarea {
 	}
 
 /* Logo */
-	.logo {
+	.logo{
+		display: grid;
+		max-width: 250px;
+		text-align: center
+	}
+	.symbol {
 		color: #374b73;
 		font-family: 'Modak', cursive;
 		font-size: 50px;
+		/* vertical-align: middle; */
 		position: relative;
-		left: 70px;
+		left: 65px;
 		letter-spacing: 6px;
 		z-index: 0;
 	}
  
-	.logo::after {
+	.symbol::after {
 		content: "अEC";
 		font-family: 'Modak', cursive;
 		color: #ff9a9a;
 		font-size: 50px;
-		position: absolute;
-		letter-spacing: 6px;
+		position: relative;
+		/* letter-spacing: 6px; */
 		top: 2px;
-		left: 2px;
+		left: -112px;
 		z-index: -1;
-	}
+	} 
 /* Company Name */
 	.companyname{
 		font-family: 'Kalam', cursive;
@@ -1955,6 +1961,9 @@ input, select, textarea {
 		color: #374b73;
 		font-size: 22px;
 		letter-spacing: 2.5px;
+		position: relative;
+		top: -5px;
+		/* vertical-align: middle; */
 	}
 /* Tag Line */
 	.tagline{
@@ -1964,9 +1973,9 @@ input, select, textarea {
 		font-size: 10px;
 		letter-spacing: 2px;
 		position: relative;
-		top: -20px;
-		left: 45px;
-	}
+		top: -23px;
+		/* left: 45px; */
+	} 
 
 /* Nav */
 
@@ -2273,6 +2282,14 @@ input, select, textarea {
 			}
 
 		/* Logo */
+			.logo{
+				max-width: 100%;
+				place-items:  center;
+			}
+		/* Company Name */
+	
+		/* Tag Line */
+		
 
 		/* Nav */
 
@@ -2637,6 +2654,18 @@ input, select, textarea {
 			}
 
 		/* Logo */
+		.logo{
+			max-width: 100%;
+			place-items:  center;
+		}
+		/* Company Name */
+		.companyname{
+			top: 0px;
+		}
+		/* Tag Line */
+		.tagline{
+			top: -15px;
+		}
 
 
 		/* Banner */
