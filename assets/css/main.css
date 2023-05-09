@@ -2099,14 +2099,55 @@ input, select, textarea {
 		width: 1680px; 
 		height: 700px;
 	}
-	/* Centered text */
-	.centered {
+	/* Banner Text */
+	.bannertext{
+		display: grid;
 		position: absolute;
-		color: hsl(0, 0%, 100%);
-		font-size: 100px;
+		max-width: 1500px;
+		text-align: center;
+		transform: translate(-50%, -50%);
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%);
+	}
+	.line1 {
+		font-size: 70px;
+		font-weight: 700;
+		width: 1000px;
+		color: #fff;
+		/* vertical-align: middle; */
+		position: relative;
+		left: 65px;
+		letter-spacing: 6px;
+	} 
+	.line2{
+		font-weight: 700;
+		color: #fff;
+		font-size: 70px;
+		letter-spacing: 2.5px;
+		position: relative;
+		top: 45px;
+		/* vertical-align: middle; */
+	}
+	.line3{
+		font-weight: 200;
+		color: #fff;
+		font-size: 20px;
+		letter-spacing: 2px;
+		position: relative;
+		top: 80px;
+		/* left: 45px; */
+	}
+	.button-icon-solid{
+		font-weight: 200;
+		background-color: #374b73;
+		width: 150px;
+		height: 40px;
+		color: #fff;
+		font-size: 20px;
+		letter-spacing: 2px;
+		position: relative;
+		top: 150px;
+		left: 42%;
 	}
 	/* About */
 	.about{
