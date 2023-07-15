@@ -2095,59 +2095,70 @@ input, select, textarea {
   		/* text-align: center; */
 	}
 	.bannerimg{
-		max-width: 100%;
-		width: 1680px; 
-		height: 700px;
+		width: 100%; 
+	}
+
+	.thumbnail {
+		position: relative;
+		display: inline-block;
 	}
 	/* Banner Text */
-	.bannertext{
+	.caption { 
 		display: grid;
 		position: absolute;
-		max-width: 1500px;
-		text-align: center;
-		transform: translate(-50%, -50%);
-		top: 50%;
+		top: 55%;
 		left: 50%;
+		width: 100%; 
+		transform: translate( -50%, -50% );
+		text-align: center;
+		color: white;
+		grid-template-rows: 7rem 7rem 7rem 7rem;
+		/* grid-row-gap: 0; */
+		grid-template-areas: 
+		"line1"
+		"line2"
+		"line3"
+		"button-icon-solid"
+		
 	}
-	.line1 {
+	.line1 { 
+		grid-area: line1;
 		font-size: 70px;
 		font-weight: 700;
-		width: 1000px;
-		color: #fff;
-		/* vertical-align: middle; */
-		position: relative;
-		left: 65px;
 		letter-spacing: 6px;
-	} 
-	.line2{
+		position: relative;
+		top: 1%;
+		/* background-color: #FF0000; */
+	}
+	.line2 { 
+		grid-area: line2;
 		font-weight: 700;
-		color: #fff;
 		font-size: 70px;
 		letter-spacing: 2.5px;
 		position: relative;
-		top: 45px;
-		/* vertical-align: middle; */
+		top: 5px;
+		/* background-color: #00FF36; */
 	}
-	.line3{
+	.line3 { 
+		grid-area: line3;
 		font-weight: 200;
-		color: #fff;
 		font-size: 20px;
 		letter-spacing: 2px;
 		position: relative;
-		top: 80px;
-		/* left: 45px; */
+		top: 5px;
+		/* background-color: #0030FF; */
 	}
-	.button-icon-solid{
+	.button-icon-solid {
+		grid-area: button-icon-solid;
 		font-weight: 200;
 		background-color: #374b73;
 		width: 150px;
 		height: 40px;
-		color: #fff;
-		font-size: 20px;
 		letter-spacing: 2px;
 		position: relative;
-		top: 150px;
-		left: 42%;
+		top: -50px;
+		left: 45%;
+		/* background-color: #FF00E4; */
 	}
 	/* About */
 	.about{
@@ -2243,6 +2254,38 @@ input, select, textarea {
 
 			body, input, select, textarea {
 				font-size: 11pt;
+			}
+			/* Banner Text */
+			.caption { 
+				top: 65%;	
+			}
+			.line1 { 
+				font-size: 50px;
+				font-weight: 700;
+				letter-spacing: 6px;
+				top: 1%;
+			}
+			.line2 { 
+				font-weight: 700;
+				font-size: 50px;
+				letter-spacing: 2.5px;
+				top: -30px;
+			}
+			.line3 { 
+				font-weight: 200;
+				font-size: 17px;
+				letter-spacing: 2px;
+				position: relative;
+				top: -45px;
+			}
+			.button-icon-solid {
+				font-weight: 0;
+				font-size: 17px;
+				width: 140px;
+				height: 40px;
+				letter-spacing: 2px;
+				top: -110px;
+				left: 44%;
 			}
 
 	}
@@ -2382,6 +2425,38 @@ input, select, textarea {
 					position: relative;
 					right: auto;
 					top: auto;
+				}
+				/* Banner Text */
+				.caption { 
+					top: 68%;	
+				}
+				.line1 { 
+					font-size: 40px;
+					font-weight: 700;
+					letter-spacing: 6px;
+					top: 1%;
+				}
+				.line2 { 
+					font-weight: 700;
+					font-size: 40px;
+					letter-spacing: 2.5px;
+					top: -30px;
+				}
+				.line3 { 
+					font-weight: 200;
+					font-size: 15px;
+					letter-spacing: 2px;
+					position: relative;
+					top: -50px;
+				}
+				.button-icon-solid {
+					font-weight: 200;
+					font-size: 15px;
+					width: 120px;
+					height: 40px;
+					letter-spacing: 2px;
+					top: -130px;
+					left: 44%;
 				}
 
 		/* Content */
@@ -2764,7 +2839,38 @@ input, select, textarea {
 				#banner .button {
 					margin: 0 0 1em 0;
 				}
-
+			/* Banner Text */
+			.caption { 
+				top: 100%;	
+			}
+			.line1 { 
+				font-size: 25px;
+				font-weight: 700;
+				letter-spacing: 6px;
+				top: 1%;
+			}
+			.line2 { 
+				font-weight: 700;
+				font-size: 25px;
+				letter-spacing: 2.5px;
+				top: -60px;
+			}
+			.line3 { 
+				font-weight: 200;
+				font-size: 10px;
+				letter-spacing: 2px;
+				position: relative;
+				top: -120px;
+			}
+			.button-icon-solid {
+				font-weight: 200;
+				font-size: 10px;
+				width: 100px;
+				height: 30px;
+				letter-spacing: 2px;
+				top: -190px;
+				left: 42%;
+			}
 		/* Content */
 
 			#content {
